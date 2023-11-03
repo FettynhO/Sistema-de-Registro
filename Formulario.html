@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(100deg, orange, black);
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 20px;
+            width: 400px;
+        }
+        fieldset{
+            border: 3px solid dodgerblue;
+        }
+        legend{
+            border: 1px solid dodgerblue;
+            padding: 15px;
+            text-align: center;
+            background-color: dodgerblue;
+            border-radius: 7px;
+        }
+        .inputbox{
+            position: relative;
+        }
+        .inputuser{
+            background:none;
+            outline-color: white;
+            width: 100%;
+            letter-spacing: 2px;
+            font-size: 10px;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+        .label-input{
+            font-size: 15px;
+            color: white;
+        }
+        .label-input{
+            position: relative;
+            left: 4px;
+        }
+        .inputuser:focus ~ .label-input{
+            top: -15px;
+            font-size: 14px;
+            color: dodgerblue;
+        }
+        .label-date{
+            position: relative;
+            top: 0px;
+            left: -176px;
+            color: black;
+        }
+        #date_birth{
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>REGISTRO</b></legend>
+                <br><br> <br>
+                <div class="input-box">
+                    <input type="text" name="name" id="name" class="inputuser" required>
+                    <label for="name" class="label-input"> <b>Complete Name</b></label>
+
+                </div>
+                <br><br>
+                    <input type="text" name="date_birth" id="date_birth" required>
+                    <label for="date_birth" class="label-date"> <b>dd/mm/aaaa</b></label>
+                <br><br>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" class="inputuser" required>
+                    <label for="email" class="label-input"> <b>Email</b></label>
+
+                </div>
+                <br><br>
+                <div class="input-box">
+                    <input type="password" name="password" id="password" class="inputuser" required>
+                    <label for="password" class="label-input"> <b>Password</b></label>
+
+                </div>
+                <br><br>
+                  <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+
+    </div>
+</body>
+</html>
